@@ -148,6 +148,7 @@ Cv <span class="token operator">=</span>
 </code></pre>
 <p><a href="https://in.mathworks.com/help/phased/ref/physconst.html">Physical Constants</a></p>
 <h1 id="class-4">Class 4</h1>
+<p>21/01/25</p>
 <h2 id="cell-array">Cell Array</h2>
 <pre class=" language-matlab"><code class="prism  language-matlab"><span class="token operator">&gt;</span><span class="token operator">&gt;</span> c <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'2017-08-16'</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">56</span><span class="token punctuation">,</span><span class="token number">67</span><span class="token punctuation">,</span><span class="token number">78</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
 
@@ -217,6 +218,57 @@ T<span class="token punctuation">.</span>BMI <span class="token operator">=</spa
     <span class="token punctuation">{</span><span class="token string">'Li'</span>     <span class="token punctuation">}</span>    <span class="token number">38</span>      true         <span class="token number">64</span>       <span class="token number">131</span>       <span class="token number">125</span>     <span class="token number">83</span>      <span class="token punctuation">{</span><span class="token string">'Pune'</span>     <span class="token punctuation">}</span>    <span class="token number">22.486</span>
     <span class="token punctuation">{</span><span class="token string">'Diaz'</span>   <span class="token punctuation">}</span>    <span class="token number">40</span>      false        <span class="token number">67</span>       <span class="token number">133</span>       <span class="token number">117</span>     <span class="token number">75</span>      <span class="token punctuation">{</span><span class="token string">'Bangalore'</span><span class="token punctuation">}</span>    <span class="token number">20.831</span>
     <span class="token punctuation">{</span><span class="token string">'Brown'</span>  <span class="token punctuation">}</span>    <span class="token number">49</span>      true         <span class="token number">64</span>       <span class="token number">119</span>       <span class="token number">122</span>     <span class="token number">80</span>      <span class="token punctuation">{</span><span class="token string">'Delhi'</span>    <span class="token punctuation">}</span>    <span class="token number">20.426</span>
+
+ <span class="token comment">% linspace(start,end,number_of_elements)</span>
+<span class="token function">linspace</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span>
+
+ans <span class="token operator">=</span>
+
+    <span class="token number">1.0000</span>    <span class="token number">1.1111</span>    <span class="token number">1.2222</span>    <span class="token number">1.3333</span>    <span class="token number">1.4444</span>    <span class="token number">1.5556</span>    <span class="token number">1.6667</span>    <span class="token number">1.7778</span>    <span class="token number">1.8889</span>    <span class="token number">2.0000</span>
+
+
+
+
+A <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">;</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">;</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">;</span><span class="token number">13</span><span class="token punctuation">,</span><span class="token number">14</span><span class="token punctuation">,</span><span class="token number">15</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+A <span class="token operator">=</span>
+
+     <span class="token number">1</span>     <span class="token number">2</span>     <span class="token number">3</span>     <span class="token number">4</span>
+     <span class="token number">5</span>     <span class="token number">6</span>     <span class="token number">7</span>     <span class="token number">8</span>
+     <span class="token number">9</span>    <span class="token number">10</span>    <span class="token number">11</span>    <span class="token number">12</span>
+    <span class="token number">13</span>    <span class="token number">14</span>    <span class="token number">15</span>    <span class="token number">16</span>
+
+
+<span class="token function">A</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token operator">:</span><span class="token punctuation">)</span>
+
+ans <span class="token operator">=</span>
+
+     <span class="token number">9</span>    <span class="token number">10</span>    <span class="token number">11</span>    <span class="token number">12</span>
+
+<span class="token function">A</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+ans <span class="token operator">=</span>
+
+     <span class="token number">2</span>
+     <span class="token number">6</span>
+    <span class="token number">10</span>
+    <span class="token number">14</span>
+
+<span class="token operator">&gt;</span><span class="token operator">&gt;</span> <span class="token function">A</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">15</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">]</span>
+
+A <span class="token operator">=</span>
+
+     <span class="token number">1</span>     <span class="token number">2</span>     <span class="token number">3</span>     <span class="token number">4</span>
+    <span class="token number">10</span>     <span class="token number">6</span>     <span class="token number">7</span>     <span class="token number">8</span>
+    <span class="token number">15</span>    <span class="token number">10</span>    <span class="token number">11</span>    <span class="token number">12</span>
+    <span class="token number">20</span>    <span class="token number">14</span>    <span class="token number">15</span>    <span class="token number">16</span>
+
+idx <span class="token operator">=</span> <span class="token function">sub2ind</span><span class="token punctuation">(</span><span class="token function">size</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+idx <span class="token operator">=</span>
+
+     <span class="token number">2</span>     <span class="token number">7</span>    <span class="token number">16</span>
+
 
 </code></pre>
 

@@ -269,6 +269,11 @@ idx <span class="token operator">=</span>
 
      <span class="token number">2</span>     <span class="token number">7</span>    <span class="token number">16</span>
 
+<span class="token operator">&gt;</span><span class="token operator">&gt;</span> <span class="token function">A</span><span class="token punctuation">(</span>idx<span class="token punctuation">)</span>
+
+ans <span class="token operator">=</span>
+
+    <span class="token number">10</span>    <span class="token number">10</span>    <span class="token number">16</span>
 
 </code></pre>
 
